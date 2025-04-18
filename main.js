@@ -11,9 +11,11 @@ fetch('Pokemon.csv')
             if (!row.trim()) return; // Skip any empty lines
 
             // Destructure the CSV values into variables
-            const [id, name, form, type1, type2, total, hp, atk, def, spatk, spdef, speed, gen] = row.split(',');
+            let [id, name, form, type1, type2, total, hp, atk, def, spatk, spdef, speed, gen] = row.split(',');
 
-
+            name = name.replaceAll('"', '');
+            type1 = type1.replaceAll('"', '');
+            type2 = type2.replaceAll('"', '');
 
             // Create a new Bootstrap card for each Pokémon
             const card = document.createElement('div');
