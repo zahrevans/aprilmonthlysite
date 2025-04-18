@@ -15,7 +15,8 @@ fetch('Pokemon.csv')
 
             name = name.replaceAll('"', '');
             type1 = type1.replaceAll('"', '');
-            type2 = type2.replaceAll('"', '');
+            type2 = type2.replaceAll('"', '');  
+            
 
             // Create a new Bootstrap card for each Pokémon
             const card = document.createElement('div');
