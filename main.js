@@ -3,11 +3,19 @@ function getPokemonImage(name) {
         return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
     }
 
+    const formattedName = name
+    .toLowerCase()
+    .replace(/♀/g, "f")
+    .replace(/♂/g, "m")
+    .replace(/\./g, "")
+    .replace(/[':]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+
     return `https://img.pokemondb.net/artwork/large/${formattedName}.jpg`;
 }
-
-
-
 
 // Fetch the CSV file named 'Pokemon.csv'
 fetch('Pokemon.csv')
@@ -24,24 +32,26 @@ fetch('Pokemon.csv')
             // Destructure the CSV values into variables
             let [id, name, form, type1, type2, total, hp, atk, def, spatk, spdef, speed, gen] = row.split(',');
 
+            // Remove quotation marks
             name = name.replaceAll('"', '');
             type1 = type1.replaceAll('"', '');
             type2 = type2.replaceAll('"', '');
 
+            const imageUrl = getPokemonImage(name); // ✅ Define imageUrl using cleaned-up name
 
             // Create a new Bootstrap card for each Pokémon
             const card = document.createElement('div');
-            card.className = 'card m-2 p-2'; // Add margin and padding using Bootstrap classes
-            card.style.width = '18rem'; // Set card width
+            card.className = 'card m-2 p-2';
+            card.style.width = '18rem';
 
             // Fill the card's HTML content with Pokémon data
             card.innerHTML = `
+                <img src="${imageUrl}" class="card-img-top" alt="${name}">
                 <div class="card-body">
                     <h5 class="card-title">#${id} ${name}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">
-                        ${type1}${type2.trim() !== '' ? ' / ' + type2 : ''} <!-- Show type2 if it exists -->
+                        ${type1}${type2.trim() !== '' ? ' / ' + type2 : ''}
                     </h6>
-                    <img src="${imageUrl}" class="card-img-top" alt="${name}">
                     <p class="card-text">
                         <strong>Total:</strong> ${total}<br>
                         <strong>HP:</strong> ${hp} |
@@ -58,3 +68,4 @@ fetch('Pokemon.csv')
             pokedex.appendChild(card);
         });
     })
+    .catch(error => console.error('Error loading the CSV:', error));
