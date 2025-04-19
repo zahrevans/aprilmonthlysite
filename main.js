@@ -61,13 +61,15 @@ fetch('Pokemon.csv')
                 Fairy: "#D685AD"
             };
 
-
+            const color1 = typeColors[type1] || "#777";
+            const color2 = type2.trim() !== "" ? (typeColors[type2] || "#777") : color1;
 
             // Create a new Bootstrap card for each Pokémon
             const card = document.createElement('div');
             card.className = 'card m-2 p-2';
             card.style.width = '18rem';
             card.style.border = 'none';
+            card.style.background = `linear-gradient(to right, ${color1} 50%, ${color2} 50%)`;
 
             // Fill the card's HTML content with Pokémon data
             card.innerHTML = `
