@@ -73,7 +73,7 @@ fetch('Pokemon.csv')
 
             // Fill the card's HTML content with Pokémon data
             card.innerHTML = `
-                <img src="${imageUrl}" class="card-img-top h-50 w-auto " alt="${name}">
+                <img src="${imageUrl}" class="card-img-top h-100%  " alt="${name}">
                 <div class="card-body">
                     <h5 class="card-title">#${id} ${name}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">

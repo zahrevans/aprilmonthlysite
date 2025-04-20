@@ -24,7 +24,71 @@
     </header>
     <main>
       <h1>Pokémon List</h1>
-      <div class="container">
+      <div class="container mb-4">
+        <div class="row g-3 align-items-center">
+          <!-- Name/ID Search -->
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control"
+              placeholder="Search by name or ID"
+            />
+          </div>
+
+          <!-- Generation Dropdown -->
+          <div class="col-md-3">
+            <select id="generationSelect" class="form-select">
+              <option value="">All Generations</option>
+              <option value="1">Generation 1</option>
+              <option value="2">Generation 2</option>
+              <option value="3">Generation 3</option>
+              <option value="4">Generation 4</option>
+              <option value="5">Generation 5</option>
+              <option value="6">Generation 6</option>
+              <option value="7">Generation 7</option>
+              <option value="8">Generation 8</option>
+              <option value="9">Generation 9</option>
+            </select>
+          </div>
+
+          <!-- Type Toggle (Single/Dual) -->
+          <div class="col-md-3">
+            <select id="typeToggle" class="form-select">
+              <option value="">All Types</option>
+              <option value="single">Single Type Only</option>
+              <option value="dual">Dual Type Only</option>
+            </select>
+          </div>
+
+          <!-- Type Filter (Grass, Fire, etc.) -->
+          <div class="col-md-3">
+            <select id="typeFilter" class="form-select">
+              <option value="">All Pokémon Types</option>
+              <option value="Normal">Normal</option>
+              <option value="Fire">Fire</option>
+              <option value="Water">Water</option>
+              <option value="Grass">Grass</option>
+              <option value="Electric">Electric</option>
+              <option value="Ice">Ice</option>
+              <option value="Fighting">Fighting</option>
+              <option value="Poison">Poison</option>
+              <option value="Ground">Ground</option>
+              <option value="Flying">Flying</option>
+              <option value="Psychic">Psychic</option>
+              <option value="Bug">Bug</option>
+              <option value="Rock">Rock</option>
+              <option value="Ghost">Ghost</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Dark">Dark</option>
+              <option value="Steel">Steel</option>
+              <option value="Fairy">Fairy</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="cards" class="container">
         <div class="row" id="pokedex"></div>
       </div>
     </main>
@@ -43,7 +107,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js
-  "></script>
+    <script src="main.js"></script>
   </body>
 </html>
