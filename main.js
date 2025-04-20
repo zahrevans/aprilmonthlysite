@@ -69,7 +69,7 @@ function renderCards(data) {
 
         const card = document.createElement('div');
         card.className = 'card m-2 p-2 col-lg-3 col-md-6 col-sm-6';
-        card.style.width = '18rem';
+        card.style.width = '16rem';
         card.style.border = 'none';
         card.style.background = `linear-gradient(to right, ${color1} 50%, ${color2} 50%)`;
 
