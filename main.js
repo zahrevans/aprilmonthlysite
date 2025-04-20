@@ -74,7 +74,9 @@ function renderCards(data) {
         card.style.background = `linear-gradient(to right, ${color1} 50%, ${color2} 50%)`;
 
         card.innerHTML = `
-           <img src="${imageUrl}" class="card-img-top" alt="${name}" style="width: 200px; height: 200px; object-fit: contain; margin: auto; display: block;">
+           <div class="pokemon-image-container">
+    <img src="${imageUrl}" alt="${name}">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">#${id} ${name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
