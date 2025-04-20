@@ -1,10 +1,24 @@
-function getPokemonImage(id) {
-    if (!id) {
+function getPokemonImage(name) {
+    if (!name) {
         return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
     }
 
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+    const formattedName = name
+        .toLowerCase()
+        .replace(/♀/g, "f")
+        .replace(/♂/g, "m")
+        .replace(/\./g, "")
+        .replace(/[':]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9\-]/g, "")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "")
+        .replace(/é/g, 'e');
+
+    return `https://img.pokemondb.net/artwork/large/${formattedName}.jpg`;
 }
+
+
 const typeColors = {
     Normal: "#A8A77A", Fire: "#EE8130", Water: "#6390F0", Electric: "#F7D02C",
     Grass: "#7AC74C", Ice: "#96D9D6", Fighting: "#C22E28", Poison: "#A33EA1",
@@ -24,7 +38,7 @@ function renderCards(data) {
             id, name, type1, type2, total, hp, atk, def, spatk, spdef, speed
         } = pokemon;
 
-        const imageUrl = getPokemonImage(id);
+        const imageUrl = getPokemonImage(name);
         const color1 = typeColors[type1] || "#777";
         const color2 = type2 ? (typeColors[type2] || "#777") : color1;
 
@@ -35,8 +49,8 @@ function renderCards(data) {
         card.style.background = `linear-gradient(to right, ${color1} 50%, ${color2} 50%)`;
 
         card.innerHTML = `
-            <img src="${imageUrl}" class="card-img-top" alt="${name}">
-            <div class="card-body ">
+           <img src="${imageUrl}" class="card-img-top" alt="${name}" style="width: 200px; height: 200px; object-fit: contain; margin: auto; display: block;">
+            <div class="card-body">
                 <h5 class="card-title">#${id} ${name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                     ${type1}${type2 ? ' / ' + type2 : ''}
