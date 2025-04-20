@@ -14,7 +14,7 @@ function getPokemonImage(name) {
         .replace(/-+/g, "-")
         .replace(/^-|-$/g, "");
 
-    return `https://img.pokemondb.net/artwork/large/${formattedName}.jpg`;
+    return `https://play.pokemonshowdown.com/sprites/ani/${formattedName}.gif`;
 }
 
 const typeColors = {

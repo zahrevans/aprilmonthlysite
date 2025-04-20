@@ -27,10 +27,10 @@
 26,"Raichu"," ","Electric"," ",485,60,90,55,90,80,110,1
 27,"Sandshrew"," ","Ground"," ",300,50,75,85,20,30,40,1
 28,"Sandslash"," ","Ground"," ",450,75,100,110,45,55,65,1
-29,"Nidoran-F","Female","Poison"," ",275,55,47,52,40,40,41,1
+29,"Nidoran","Female","Poison"," ",275,55,47,52,40,40,41,1
 30,"Nidorina"," ","Poison"," ",365,70,62,67,55,55,56,1
 31,"Nidoqueen"," ","Poison","Ground",505,90,92,87,75,85,76,1
-32,"Nidoran-M","Male","Poison"," ",273,46,57,40,40,40,50,1
+32,"Nidoran","Male","Poison"," ",273,46,57,40,40,40,50,1
 33,"Nidorino"," ","Poison"," ",365,61,72,57,55,55,65,1
 34,"Nidoking"," ","Poison","Ground",505,81,102,77,85,75,85,1
 35,"Clefairy"," ","Fairy"," ",323,70,45,48,60,65,35,1
@@ -388,9 +388,9 @@
 384,"Rayquaza"," ","Dragon","Flying",680,105,150,90,150,90,95,3
 385,"Jirachi"," ","Steel","Psychic",600,100,100,100,100,100,100,3
 386,"Deoxys","Normal Forme","Psychic"," ",600,50,150,50,150,50,150,3
-386,"Deoxys","Attack Forme","Psychic"," ",600,50,180,20,180,20,150,3
-386,"Deoxys","Defense Forme","Psychic"," ",600,50,70,160,70,160,90,3
-386,"Deoxys","Speed Forme","Psychic"," ",600,50,95,90,95,90,180,3
+386,"Deoxys-attack","Attack Forme","Psychic"," ",600,50,180,20,180,20,150,3
+386,"Deoxys-defense","Defense Forme","Psychic"," ",600,50,70,160,70,160,90,3
+386,"Deoxys-speed","Speed Forme","Psychic"," ",600,50,95,90,95,90,180,3
 387,"Turtwig"," ","Grass"," ",318,55,68,64,45,55,31,4
 388,"Grotle"," ","Grass"," ",405,75,89,85,55,65,36,4
 389,"Torterra"," ","Grass","Ground",525,95,109,105,75,85,56,4
