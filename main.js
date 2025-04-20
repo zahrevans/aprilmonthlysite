@@ -29,7 +29,7 @@ fetch('Pokemon.csv')
         rows.forEach(row => {
             if (!row.trim()) return; // Skip any empty lines
 
-            // Destructure the CSV values into variables
+            // turn the CSV values into variables
             let [id, name, form, type1, type2, total, hp, atk, def, spatk, spdef, speed, gen] = row.split(',');
 
             // Remove quotation marks
@@ -66,14 +66,14 @@ fetch('Pokemon.csv')
 
             // Create a new Bootstrap card for each Pokémon
             const card = document.createElement('div');
-            card.className = 'card m-2 p-2';
+            card.className = 'card m-2 p-2 col-lg-3 col-md-6 col-sm-6';
             card.style.width = '18rem';
             card.style.border = 'none';
             card.style.background = `linear-gradient(to right, ${color1} 50%, ${color2} 50%)`;
 
             // Fill the card's HTML content with Pokémon data
             card.innerHTML = `
-                <img src="${imageUrl}" class="card-img-top" alt="${name}">
+                <img src="${imageUrl}" class="card-img-top h-50 w-auto " alt="${name}">
                 <div class="card-body">
                     <h5 class="card-title">#${id} ${name}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">
@@ -83,7 +83,7 @@ fetch('Pokemon.csv')
                         <strong>Total:</strong> ${total}<br>
                         <strong>HP:</strong> ${hp} |
                         <strong>Attack:</strong> ${atk} |
-                        <strong>Defense:</strong> ${def}<br>
+                        <strong>Defense:</strong> ${def} |
                         <strong>Special Attack:</strong> ${spatk} |
                         <strong>Special Defense:</strong> ${spdef} |
                         <strong>Speed:</strong> ${speed}
