@@ -1,9 +1,34 @@
+// Mapping for only the missing images (Pokémon DB doesn't have them)
+const nameToIdMap = {
+    "Sinistcha": "1013",
+    "Iron Boulder": "1022",
+    "Ogerpon-Wellspring": "10273",
+    "Ogerpon-Hearthflame": "10274",
+    "Ogerpon-Cornerstone": "10275",
+    "Hydrapple": "1019",
+    "Gouging Fire": "1020",
+    "Terapagos-Stellar": "1025"
+};
+
+// Set of Pokémon names that are missing from Pokémon DB
+const missingFromPokemonDB = new Set(Object.keys(nameToIdMap));
+
+// Function to convert name to Pokédex ID for missing entries
+function getPokemonIdFromName(name) {
+    const cleanedName = name.trim().replace(/é/g, 'e');
+    return nameToIdMap[cleanedName] || null;
+}
+
+// Main image function
 function getPokemonImage(name) {
-    if (!name) {
-        return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png";
+    const cleanName = name.trim().replace(/é/g, 'e');
+
+    if (missingFromPokemonDB.has(cleanName)) {
+        const id = getPokemonIdFromName(cleanName);
+        return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
     }
 
-    const formattedName = name
+    const formattedName = cleanName
         .toLowerCase()
         .replace(/♀/g, "f")
         .replace(/♂/g, "m")
@@ -12,11 +37,11 @@ function getPokemonImage(name) {
         .replace(/\s+/g, "-")
         .replace(/[^a-z0-9\-]/g, "")
         .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "")
-        .replace(/é/g, 'e');
+        .replace(/^-|-$/g, "");
 
     return `https://img.pokemondb.net/artwork/large/${formattedName}.jpg`;
 }
+
 
 
 const typeColors = {

@@ -1178,7 +1178,10 @@
 1014,"Okidogi"," ","Poison","Fighting",555,88,128,115,58,86,80,9
 1015,"Munkidori"," ","Poison","Psychic",555,88,75,66,130,90,106,9
 1016,"Fezandipiti"," ","Poison","Fairy",555,88,91,82,70,125,99,9
-1017,"Ogerpon-Teal","Teal Mask","Grass"," ",550,80,120,84,60,96,110,9
+1017,"Ogerpon","Teal Mask","Grass"," ",550,80,120,84,60,96,110,9
+1017,"Ogerpon-Wellspring","Wellspring Mask","Grass","Water",550,80,120,84,60,96,110,9
+1017,"Ogerpon-Hearthflame","Hearthflame Mask","Grass","Fire",550,80,120,84,60,96,110,9
+1017,"Ogerpon-Cornerstone","Cornerstone Mask","Grass","Rock",550,80,120,84,60,96,110,9
 1018,"Archaludon"," ","Steel","Dragon",600,90,105,130,125,65,85,9
 1019,"Hydrapple"," ","Grass","Dragon",540,106,80,110,120,80,44,9
 1020,"Gouging Fire"," ","Fire","Dragon",590,105,115,121,65,93,91,9
