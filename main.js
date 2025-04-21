@@ -13,36 +13,13 @@ const nameToIdMap = {
     "Castform-Sunny": "10013"
 };
 
-// Set of Pokémon names that are missing from Pokémon DB
-const missingFromPokemonDB = new Set(Object.keys(nameToIdMap));
-
-// Function to convert name to Pokédex ID for missing entries
-function getPokemonIdFromName(name) {
-    const cleanedName = name.trim().replace(/é/g, 'e');
-    return nameToIdMap[cleanedName] || null;
-}
-
-// Main image function
-function getPokemonImage(name) {
+function getPokemonImage(name, id) {
     const cleanName = name.trim().replace(/é/g, 'e');
+    const overrideId = nameToIdMap[cleanName];
 
-    if (missingFromPokemonDB.has(cleanName)) {
-        const id = getPokemonIdFromName(cleanName);
-        return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
-    }
+    const finalId = overrideId || id;
 
-    const formattedName = cleanName
-        .toLowerCase()
-        .replace(/♀/g, "f")
-        .replace(/♂/g, "m")
-        .replace(/\./g, "")
-        .replace(/[':]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/[^a-z0-9\-]/g, "")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
-
-    return `https://img.pokemondb.net/artwork/large/${formattedName}.jpg`;
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${finalId}.png`;
 }
 
 
@@ -66,7 +43,7 @@ function renderCards(data) {
             id, name, type1, type2, total, hp, atk, def, spatk, spdef, speed
         } = pokemon;
 
-        const imageUrl = getPokemonImage(name);
+        const imageUrl = getPokemonImage(name, id);
         const color1 = typeColors[type1] || "#777";
         const color2 = type2 ? (typeColors[type2] || "#777") : color1;
 
