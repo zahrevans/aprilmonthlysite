@@ -14,10 +14,22 @@ const nameToIdMap = {
     "Deoxys-Attack": "10001",
     "Deoxys-Defense": "10002",
     "Deoxys-Speed": "10003",
-    "Burmy-Sandy": "10004",
-    "Burmy-Trash": "10005",
-    "Wormadam-Sandy": "10036",
-    "Wormadam-Trash": "10037"
+    "Wormadam-Sandy": "10004",
+    "Wormadam-Trash": "10005",
+    "Rotom-Heat": "10008",
+    "Rotom-Wash": "10009",
+    "Rotom-Frost": "10010",
+    "Rotom-Fan": "10011",
+    "Rotom-Mow": "10012",
+    "Shaymin-Sky": "10006",
+    "Giratina-Origin": "10007",
+    "Tornadus-Therian": "10019",
+    "Thundurus-Therian": "10020",
+    "Landorus-Therian": "10021",
+    "Kyurem-Black": "10023",
+    "Kyurem-White": "10024",
+    "Keldeo-Resolute": "10026",
+    "Meloetta-Pirouette": "10027"
 };
 
 function getPokemonImage(name, id) {
