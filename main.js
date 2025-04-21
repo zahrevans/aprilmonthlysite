@@ -88,8 +88,35 @@ const nameToIdMap = {
     "Lucario-Mega": "10059",
     "Abomasnow-Mega": "10060",
     "Gallade-Mega": "10068",
-    "Audino-Mega": "10069"
-
+    "Audino-Mega": "10069",
+    "Oricorio-Pom-Pom": "10123",
+    "Oricorio-Pa'u": "10124",
+    "Oricorio-Sensu": "10125",
+    "Lycanroc-Midnight": "10126",
+    "Lycanroc-Dusk": "10152",
+    "Wishiwashi-School": "10127",
+    "Minior-Core": "10136",
+    "Necrozma-Ultra": "10157",
+    "Necrozma-Dusk-Mane": "10155",
+    "Necrozma-Dawn-Wings": "10156",
+    "Rattata-Alolan": "10091",
+    "Raticate-Alolan": "10092",
+    "Raichu-Alolan": "10100",
+    "Sandshrew-Alolan": "10101",
+    "Sandslash-Alolan": "10102",
+    "Vulpix-Alolan": "10103",
+    "Ninetales-Alolan": "10104",
+    "Diglett-Alolan": "10105",
+    "Dugtrio-Alolan": "10106",
+    "Meowth-Alolan": "10107",
+    "Persian-Alolan": "10108",
+    "Geodude-Alolan": "10109",
+    "Graveler-Alolan": "10110",
+    "Golem-Alolan": "10111",
+    "Grimer-Alolan": "10112",
+    "Muk-Alolan": "10113",
+    "Exeggutor-Alolan": "10114",
+    "Marowak-Alolan": "10115"
 };
 
 function getPokemonImage(name, id) {
