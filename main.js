@@ -7,7 +7,10 @@ const nameToIdMap = {
     "Ogerpon-Cornerstone": "10275",
     "Hydrapple": "1019",
     "Gouging Fire": "1020",
-    "Terapagos-Stellar": "1025"
+    "Terapagos-Stellar": "1025",
+    "Castform-Snowy": "10015",
+    "Castform-Rainy": "10014",
+    "Castform-Sunny": "10013"
 };
 
 // Set of Pokémon names that are missing from Pokémon DB

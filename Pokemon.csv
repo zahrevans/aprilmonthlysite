@@ -350,6 +350,9 @@
 349,"Feebas"," ","Water"," ",200,20,15,20,10,55,80,3
 350,"Milotic"," ","Water"," ",540,95,60,79,100,125,81,3
 351,"Castform"," ","Normal"," ",420,70,70,70,70,70,70,3
+351,"Castform-Sunny","Sunny Form","Fire"," ",420,70,70,70,70,70,70,3
+351,"Castform-Rainy","Rainy Form","Water"," ",420,70,70,70,70,70,70,3
+351,"Castform-Snowy","Snowy Form","Ice"," ",420,70,70,70,70,70,70,3
 352,"Kecleon"," ","Normal"," ",440,60,90,70,60,120,40,3
 353,"Shuppet"," ","Ghost"," ",295,44,75,35,63,33,45,3
 354,"Banette"," ","Ghost"," ",455,64,115,65,83,63,65,3
@@ -569,7 +572,7 @@
 553,"Krookodile"," ","Ground","Dark",519,95,117,80,65,70,92,5
 554,"Darumaka"," ","Fire"," ",315,70,90,45,15,45,50,5
 555,"Darmanitan","Standard Mode","Fire"," ",480,105,140,55,30,55,95,5
-555,"Darmanitan","Zen Mode","Fire","Psychic",540,105,30,105,140,105,55,5
+555,"Darmanitan-Zen","Zen Mode","Fire","Psychic",540,105,30,105,140,105,55,5
 556,"Maractus"," ","Grass"," ",461,75,86,67,106,67,60,5
 557,"Dwebble"," ","Bug","Rock",325,50,65,85,35,35,55,5
 558,"Crustle"," ","Bug","Rock",485,70,105,125,65,75,45,5
@@ -1052,7 +1055,7 @@
 550,"Basculin-White-Striped","White-Striped Form","Water"," ",460,70,92,65,80,55,98,8
 554,"Darumaka-Galarian","Galarian Darumaka","Ice"," ",315,70,90,45,15,45,50,8
 555,"Darmanitan-Galarian","Galarian Standard Mode","Ice"," ",480,105,140,55,30,55,95,8
-555,"Darmanitan-Galarian","Galarian Zen Mode","Ice","Fire",540,105,160,55,30,55,135,8
+555,"Darmanitan-Galarian-Zen","Galarian Zen Mode","Ice","Fire",540,105,160,55,30,55,135,8
 562,"Yamask-Galarian","Galarian Yamask","Ground","Ghost",303,38,55,85,30,65,30,8
 570,"Zorua-Hisuian","Hisuian Zorua","Normal","Ghost",330,35,60,40,85,40,70,8
 571,"Zoroark-Hisuian","Hisuian Zoroark","Normal","Ghost",510,55,100,60,125,60,110,8
@@ -1072,8 +1075,8 @@
 913,"Quaxwell"," ","Water"," ",410,70,85,65,65,60,65,9
 914,"Quaquaval"," ","Water","Fighting",530,85,120,80,85,75,85,9
 915,"Lechonk"," ","Normal"," ",254,54,45,40,35,45,35,9
-916,"Oinkologne","Male","Normal"," ",489,110,100,75,59,80,65,9
-916,"Oinkologne","Female","Normal"," ",489,115,90,70,59,90,65,9
+916,"Oinkologne-Male","Male","Normal"," ",489,110,100,75,59,80,65,9
+916,"Oinkologne-Female","Female","Normal"," ",489,115,90,70,59,90,65,9
 917,"Tarountula"," ","Bug"," ",210,35,41,45,29,40,20,9
 918,"Spidops"," ","Bug"," ",404,60,79,92,52,86,35,9
 919,"Nymble"," ","Bug"," ",210,33,46,40,21,25,45,9
