@@ -10,7 +10,14 @@ const nameToIdMap = {
     "Terapagos-Stellar": "1025",
     "Castform-Snowy": "10015",
     "Castform-Rainy": "10014",
-    "Castform-Sunny": "10013"
+    "Castform-Sunny": "10013",
+    "Deoxys-Attack": "10001",
+    "Deoxys-Defense": "10002",
+    "Deoxys-Speed": "10003",
+    "Burmy-Sandy": "10004",
+    "Burmy-Trash": "10005",
+    "Wormadam-Sandy": "10036",
+    "Wormadam-Trash": "10037"
 };
 
 function getPokemonImage(name, id) {
