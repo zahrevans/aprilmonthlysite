@@ -1,15 +1,15 @@
 .pokemon-image-container {
-    background-color: white;        /* White background */
-    padding: 8px;                   /* Optional padding around the image */
-    border-radius: 10px;            /* Optional rounded corners */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;                  /* Set height for uniformity */
-    overflow: hidden;
+  background-color: white; /* White background */
+  padding: 8px; 
+  border-radius: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; 
+  overflow: hidden;
 }
 .pokemon-image-container img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }

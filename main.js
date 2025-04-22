@@ -157,7 +157,6 @@ const nameToIdMap = {
     "Avalugg-Hisuian": "10243",
     "Samurott-Hisuian": "10236",
     "Lilligant-Hisuian": "10237",
-    "Basculin-White-Striped": "",
     "Decidueye-Hisuian": "10244",
     "Enamorus-Therian": "10249",
     "Dialga-Origin": "10245",
