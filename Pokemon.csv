@@ -898,7 +898,24 @@
 807,"Zeraora"," ","Electric"," ",600,88,112,75,102,80,143,7
 808,"Meltan"," ","Steel"," ",300,46,65,65,55,35,34,7
 809,"Melmetal"," ","Steel"," ",600,135,143,143,80,65,34,7
-
+19,"Rattata-Alolan","Alolan Rattata","Dark","Normal",253,30,56,35,25,35,72,7
+20,"Raticate-Alolan","Alolan Raticate","Dark","Normal",413,75,71,70,40,80,77,7
+26,"Raichu-Alolan","Alolan Raichu","Electric","Psychic",485,60,85,50,95,85,110,7
+27,"Sandshrew-Alolan","Alolan Sandshrew","Ice","Steel",300,50,75,90,10,35,40,7
+28,"Sandslash-Alolan","Alolan Sandslash","Ice","Steel",450,75,100,120,25,65,65,7
+37,"Vulpix-Alolan","Alolan Vulpix","Ice"," ",299,38,41,40,50,65,65,7
+38,"Ninetales-Alolan","Alolan Ninetales","Ice","Fairy",505,73,67,75,81,100,109,7
+50,"Diglett-Alolan","Alolan Diglett","Ground","Steel",265,10,55,30,35,45,90,7
+51,"Dugtrio-Alolan","Alolan Dugtrio","Ground","Steel",425,35,100,60,50,70,110,7
+52,"Meowth-Alolan","Alolan Meowth","Dark"," ",290,40,35,35,50,40,90,7
+53,"Persian-Alolan","Alolan Persian","Dark"," ",440,65,60,60,75,65,115,7
+74,"Geodude-Alolan","Alolan Geodude","Rock","Electric",300,40,80,100,30,30,20,7
+75,"Graveler-Alolan","Alolan Graveler","Rock","Electric",390,55,95,115,45,45,35,7
+76,"Golem-Alolan","Alolan Golem","Rock","Electric",495,80,120,130,55,65,45,7
+88,"Grimer-Alolan","Alolan Grimer","Poison","Dark",325,80,80,50,40,50,25,7
+89,"Muk-Alolan","Alolan Muk","Poison","Dark",500,105,105,75,65,100,50,7
+103,"Exeggutor-Alolan","Alolan Exeggutor","Grass","Dragon",530,95,105,85,125,75,45,7
+105,"Marowak-Alolan","Alolan Marowak","Fire","Ghost",425,60,80,110,50,80,45,7
 810,"Grookey"," ","Grass"," ",310,50,65,50,40,40,65,8
 811,"Thwackey"," ","Grass"," ",420,70,85,70,55,60,80,8
 812,"Rillaboom"," ","Grass"," ",530,100,125,90,60,70,85,8
@@ -1007,24 +1024,6 @@
 904,"Overqwil"," ","Dark","Poison",510,85,115,95,65,65,85,8
 905,"Enamorus-Incarnate","Incarnate Forme","Fairy","Flying",580,74,115,70,135,80,106,8
 905,"Enamorus-Therian","Therian Forme","Fairy","Flying",580,74,115,110,135,100,46,8
-19,"Rattata-Alolan","Alolan Rattata","Dark","Normal",253,30,56,35,25,35,72,7
-20,"Raticate-Alolan","Alolan Raticate","Dark","Normal",413,75,71,70,40,80,77,7
-26,"Raichu-Alolan","Alolan Raichu","Electric","Psychic",485,60,85,50,95,85,110,7
-27,"Sandshrew-Alolan","Alolan Sandshrew","Ice","Steel",300,50,75,90,10,35,40,7
-28,"Sandslash-Alolan","Alolan Sandslash","Ice","Steel",450,75,100,120,25,65,65,7
-37,"Vulpix-Alolan","Alolan Vulpix","Ice"," ",299,38,41,40,50,65,65,7
-38,"Ninetales-Alolan","Alolan Ninetales","Ice","Fairy",505,73,67,75,81,100,109,7
-50,"Diglett-Alolan","Alolan Diglett","Ground","Steel",265,10,55,30,35,45,90,7
-51,"Dugtrio-Alolan","Alolan Dugtrio","Ground","Steel",425,35,100,60,50,70,110,7
-52,"Meowth-Alolan","Alolan Meowth","Dark"," ",290,40,35,35,50,40,90,7
-53,"Persian-Alolan","Alolan Persian","Dark"," ",440,65,60,60,75,65,115,7
-74,"Geodude-Alolan","Alolan Geodude","Rock","Electric",300,40,80,100,30,30,20,7
-75,"Graveler-Alolan","Alolan Graveler","Rock","Electric",390,55,95,115,45,45,35,7
-76,"Golem-Alolan","Alolan Golem","Rock","Electric",495,80,120,130,55,65,45,7
-88,"Grimer-Alolan","Alolan Grimer","Poison","Dark",325,80,80,50,40,50,25,7
-89,"Muk-Alolan","Alolan Muk","Poison","Dark",500,105,105,75,65,100,50,7
-103,"Exeggutor-Alolan","Alolan Exeggutor","Grass","Dragon",530,95,105,85,125,75,45,7
-105,"Marowak-Alolan","Alolan Marowak","Fire","Ghost",425,60,80,110,50,80,45,7
 52,"Meowth-Galarian","Galarian Meowth","Steel"," ",290,50,65,55,40,40,40,8
 58,"Growlithe-Hisuian","Hisuian Growlithe","Fire","Rock",350,60,75,45,65,50,55,8
 59,"Arcanine-Hisuian","Hisuian Arcanine","Fire","Rock",555,95,115,80,95,80,90,8

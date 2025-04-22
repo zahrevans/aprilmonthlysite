@@ -178,6 +178,11 @@ const nameToIdMap = {
     "Tauros-Aqua": "10252",
     "Wooper-Paldean": "10253",
     "Ursaluna-Bloodmoon": "10272",
+    "Greninja-Ash": "10117",
+    "Groudon-Primal": "10078",
+    "Kyogre-Primal": "10077",
+    // primal groudon & kyogre
+
 
 
 };
@@ -194,11 +199,24 @@ function getPokemonImage(name, id) {
 
 
 const typeColors = {
-    Normal: "#A8A77A", Fire: "#EE8130", Water: "#6390F0", Electric: "#F7D02C",
-    Grass: "#7AC74C", Ice: "#96D9D6", Fighting: "#C22E28", Poison: "#A33EA1",
-    Ground: "#E2BF65", Flying: "#A98FF3", Psychic: "#F95587", Bug: "#A6B91A",
-    Rock: "#B6A136", Ghost: "#735797", Dragon: "#6F35FC", Dark: "#705746",
-    Steel: "#B7B7CE", Fairy: "#D685AD"
+    Normal: "#A8A77A",
+    Fire: "#EE8130",
+    Water: "#6390F0",
+    Electric: "#F7D02C",
+    Grass: "#7AC74C",
+    Ice: "#96D9D6",
+    Fighting: "#C22E28",
+    Poison: "#A33EA1",
+    Ground: "#E2BF65",
+    Flying: "#A98FF3",
+    Psychic: "#F95587",
+    Bug: "#A6B91A",
+    Rock: "#B6A136",
+    Ghost: "#735797",
+    Dragon: "#6F35FC",
+    Dark: "#705746",
+    Steel: "#B7B7CE",
+    Fairy: "#D685AD",
 };
 
 let allPokemon = [];
@@ -265,7 +283,7 @@ function applyFilters() {
     renderCards(filtered);
 }
 
-// Load CSV
+// Grab CSV
 fetch('Pokemon.csv')
     .then(response => response.text())
     .then(data => {
@@ -273,7 +291,7 @@ fetch('Pokemon.csv')
 
         rows.forEach(row => {
             if (!row.trim()) return;
-
+            //assign the data as a variable
             let [id, name, form, type1, type2, total, hp, atk, def, spatk, spdef, speed, gen] = row.split(',');
 
             name = name.replaceAll('"', '').trim();
