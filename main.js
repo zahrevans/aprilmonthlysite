@@ -1,5 +1,7 @@
 // Mapping for only the missing images (Pokémon DB doesn't have them)
 const nameToIdMap = {
+    // Format: "Form-Name": "PokéAPI Form ID"
+    // These are special/alternate forms that require specific IDs
     "Sinistcha": "1013",
     "Iron Boulder": "1022",
     "Ogerpon-Wellspring": "10273",
@@ -293,4 +295,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('generationSelect')?.addEventListener('change', applyFilters);
     document.getElementById('typeToggle')?.addEventListener('change', applyFilters);
     document.getElementById('typeFilter')?.addEventListener('change', applyFilters);
+});
+
+
+// back to top button 
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
 });
