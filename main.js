@@ -165,6 +165,19 @@ const nameToIdMap = {
     "Basculegion-Female": "10248",
     "Basculin-White-Stripe": "10247",
     "Basculin-Blue-Stripe": "10016",
+    "Oinkologne-Female": "10254",
+    "Palafin-Hero": "10256",
+    "Tatsugiri-Droopy": "10258",
+    "Tatsugiri-Stretchy": "10259",
+    "Gimmighoul-Roaming": "10263",
+    "Terapagos-Terastal": "10276",
+    "Terapagos-Stellar": "10277",
+    "Tauros-Paldean": "10250",
+    "Tauros-Blaze": "10251",
+    "Tauros-Aqua": "10252",
+    "Wooper-Paldean": "10253",
+    "Ursaluna-Bloodmoon": "10272",
+
 
 };
 
