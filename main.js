@@ -305,7 +305,7 @@ fetch('Pokemon.csv')
 
         renderCards(allPokemon);
     })
-    .catch(error => console.error('Error loading the CSV:', error));
+    
 
 // Filter inputs
 document.addEventListener('DOMContentLoaded', () => {
