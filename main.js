@@ -181,10 +181,6 @@ const nameToIdMap = {
     "Greninja-Ash": "10117",
     "Groudon-Primal": "10078",
     "Kyogre-Primal": "10077",
-    // primal groudon & kyogre
-
-
-
 };
 
 function getPokemonImage(name, id) {
@@ -305,7 +301,7 @@ fetch('Pokemon.csv')
 
         renderCards(allPokemon);
     })
-    
+
 
 // Filter inputs
 document.addEventListener('DOMContentLoaded', () => {

@@ -20,79 +20,49 @@
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main>
-      <a href="#" id="scroll" style="display: none"><span></span></a>
-      <h1>Pokémon List</h1>
-      <div class="container mb-4">
-        <div class="row g-3 align-items-center">
-          <!-- Name/ID Search -->
-          <div class="col-md-3">
-            <input
-              type="text"
-              id="searchInput"
-              class="form-control"
-              placeholder="Search by name or ID"
-            />
+    <header><nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-
-          <!-- Generation Dropdown -->
-          <div class="col-md-3">
-            <select id="generationSelect" class="form-select">
-              <option value="">All Generations</option>
-              <option value="1">Generation 1</option>
-              <option value="2">Generation 2</option>
-              <option value="3">Generation 3</option>
-              <option value="4">Generation 4</option>
-              <option value="5">Generation 5</option>
-              <option value="6">Generation 6</option>
-              <option value="7">Generation 7</option>
-              <option value="8">Generation 8</option>
-              <option value="9">Generation 9</option>
-            </select>
-          </div>
-
-          <!-- Type Toggle (Single/Dual) -->
-          <div class="col-md-3">
-            <select id="typeToggle" class="form-select">
-              <option value="">All Types</option>
-              <option value="single">Single Type Only</option>
-              <option value="dual">Dual Type Only</option>
-            </select>
-          </div>
-
-          <!-- Type Filter (Grass, Fire, etc.) -->
-          <div class="col-md-3">
-            <select id="typeFilter" class="form-select">
-              <option value="">All Pokémon Types</option>
-              <option value="Normal">Normal</option>
-              <option value="Fire">Fire</option>
-              <option value="Water">Water</option>
-              <option value="Grass">Grass</option>
-              <option value="Electric">Electric</option>
-              <option value="Ice">Ice</option>
-              <option value="Fighting">Fighting</option>
-              <option value="Poison">Poison</option>
-              <option value="Ground">Ground</option>
-              <option value="Flying">Flying</option>
-              <option value="Psychic">Psychic</option>
-              <option value="Bug">Bug</option>
-              <option value="Rock">Rock</option>
-              <option value="Ghost">Ghost</option>
-              <option value="Dragon">Dragon</option>
-              <option value="Dark">Dark</option>
-              <option value="Steel">Steel</option>
-              <option value="Fairy">Fairy</option>
-            </select>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </div>
-
-      <div id="cards" class="container">
-        <div class="row" id="pokedex"></div>
-      </div>
+    </header>
+    <main>
+      
     </main>
     <footer>
       <!-- place footer here -->
