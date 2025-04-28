@@ -28,7 +28,7 @@ let losses = 0;
 
 // === update the score badges ===
 function updateScoreDisplay() {
-    document.querySelector('.wins').textContent   = `Wins: ${wins}`;
+    document.querySelector('.wins').textContent = `Wins: ${wins}`;
     document.querySelector('.losses').textContent = `Losses: ${losses}`;
 }
 
@@ -126,4 +126,44 @@ function handleMiss(guess) {
 function handleWin() {
     new Audio('Correct.mp3').play();
     endGame(true);
+}
+function endGame(won) {
+    if (won) {
+        wins++;
+        showMessage('🎉 Congratulations! You caught it!', 'success');
+    } else {
+        losses++;
+        showMessage(`❌ Game Over! It was "${selectedWord}".`, 'danger');
+    }
+    updateScoreDisplay();
+    setTimeout(restartGame, 2000);
+}
+
+
+function showMessage(text, type) {
+    const msg = document.createElement('div');
+    msg.className = `alert alert-${type} mt-3`;
+    msg.textContent = text;
+    msg.style.opacity = '0';
+    msg.style.transition = 'opacity 0.5s ease';
+    document.getElementById('gameArea').appendChild(msg);
+    requestAnimationFrame(() => {
+        msg.style.opacity = '1';
+    });
+}
+
+
+function restartGame() {
+
+    document.querySelectorAll('#gameArea .alert')
+        .forEach(alert => alert.remove());
+
+
+    document.getElementById('wordDisplay').textContent = '';
+    document.getElementById('wrongLetters').textContent = 'Wrong Guesses:';
+    document.getElementById('livesImage').src = 'img/6-gold-coins.jpeg';
+
+    document.getElementById('difficultySelection').classList.remove('d-none');
+    document.getElementById('difficultyBox').classList.add('d-none');
+    document.getElementById('gameArea').classList.add('d-none');
 }
