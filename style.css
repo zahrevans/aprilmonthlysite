@@ -1,3 +1,4 @@
+@charset "utf-8";
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,17 +6,19 @@ body {
   background: #f8f8ff;
   color: #333;
 }
+
 main {
   margin-top: 3%;
 }
+
 .hero {
-  position: relative; /* make sure overlay is positioned correctly */
+  position: relative;
   background: url("bkg.jpg") no-repeat center;
   background-size: cover;
   padding: 100px 20px;
   text-align: center;
   color: white;
-  overflow: hidden; /* good practice */
+  overflow: hidden;
 }
 
 .hero .overlay {
@@ -29,7 +32,7 @@ main {
 }
 
 .hero h1 {
-  position: relative; /* Add this */
+  position: relative;
   font-size: 3em;
   margin-bottom: 10px;
   color: black;
@@ -37,22 +40,25 @@ main {
 }
 
 .hero p {
-  position: relative; /* Add this */
+  position: relative;
   font-size: 1.2em;
   color: black;
   z-index: 1;
 }
+
 .section {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
 }
+
 .columns {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
+
 .card {
   background: white;
   border-radius: 12px;
@@ -61,27 +67,33 @@ main {
   padding: 20px;
   text-align: center;
 }
+
 .card h3 {
   margin-top: 10px;
 }
+
 .card ul {
   padding: 0;
   list-style: none;
   margin-top: 10px;
 }
+
 .media {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
   text-align: center;
 }
+
 .media div {
   flex: 1;
 }
+
 .media img {
   width: 50px;
   margin-bottom: 10px;
 }
+
 .media a {
   text-decoration: none;
 }
@@ -94,17 +106,19 @@ main {
   margin-top: 40px;
   font-size: 1.1em;
 }
+
 @media (max-width: 768px) {
   .columns {
     flex-direction: column;
   }
+
   .features {
     flex-direction: column;
     gap: 20px;
   }
 }
-/* carousel css*/
-@charset "utf-8";
+
+/* carousel css */
 
 /******* Fonts Import Start **********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -115,21 +129,26 @@ main {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
 .clear {
   clear: both;
 }
+
 img {
   max-width: 100%;
   border: 0px;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -137,6 +156,7 @@ a {
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
+
 a:focus,
 a:active,
 a:visited,
@@ -144,9 +164,11 @@ a:hover {
   text-decoration: none;
   outline: none;
 }
+
 a:hover {
   color: #e73700;
 }
+
 h2 {
   margin-bottom: 48px;
   padding-bottom: 16px;
@@ -156,21 +178,24 @@ h2 {
   position: relative;
   text-transform: capitalize;
 }
+
 h3 {
   margin: 0 0 10px;
   font-size: 28px;
   line-height: 36px;
 }
+
 button {
   outline: none !important;
 }
-/******* Common Element CSS End *********/
+/******* Common Element CSS End **********/
 
 /* -------- title style ------- */
 .line-title {
   position: relative;
   width: 400px;
 }
+
 .line-title::before,
 .line-title::after {
   content: "";
@@ -180,10 +205,12 @@ button {
   height: 4px;
   border-radius: 2px;
 }
+
 .line-title::before {
   width: 100%;
   background: #f2f2f2;
 }
+
 .line-title::after {
   width: 32px;
   background: #e73700;
@@ -194,11 +221,13 @@ button {
 .game-section {
   padding: 60px 50px;
 }
+
 .game-section .owl-stage {
   margin: 15px 0;
   display: flex;
   display: -webkit-flex;
 }
+
 .game-section .item {
   margin: 0 15px 60px;
   width: 320px;
@@ -215,11 +244,13 @@ button {
   -webkit-transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
+
 .game-section .item.active {
   width: 500px;
   box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
 }
+
 .game-section .item:after {
   content: "";
   display: block;
@@ -230,6 +261,7 @@ button {
   top: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
+
 .game-section .item-desc {
   padding: 0 24px 12px;
   color: #fff;
@@ -241,10 +273,12 @@ button {
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
+
 .game-section .item.active .item-desc {
   transform: none;
   -webkit-transform: none;
 }
+
 .game-section .item-desc p {
   opacity: 0;
   -webkit-transform: translateY(32px);
@@ -252,11 +286,13 @@ button {
   transition: all 0.4s ease-in-out 0.2s;
   -webkit-transition: all 0.4s ease-in-out 0.2s;
 }
+
 .game-section .item.active .item-desc p {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+
 .game-section .owl-theme.custom-carousel .owl-dots {
   margin-top: -20px;
   position: relative;
@@ -265,29 +301,31 @@ button {
 /******** Middle section CSS End *******/
 
 /***** responsive css Start ******/
-
 @media (min-width: 992px) and (max-width: 1199px) {
   h2 {
     margin-bottom: 32px;
   }
+
   h3 {
     margin: 0 0 8px;
     font-size: 24px;
     line-height: 32px;
   }
 
-  /* -------- Landing page ------- */
   .game-section {
     padding: 50px 30px;
   }
+
   .game-section .item {
     margin: 0 12px 60px;
     width: 260px;
     height: 360px;
   }
+
   .game-section .item.active {
     width: 400px;
   }
+
   .game-section .item-desc {
     transform: translateY(calc(100% - 46px));
     -webkit-transform: translateY(calc(100% - 46px));
@@ -298,27 +336,31 @@ button {
   h2 {
     margin-bottom: 32px;
   }
+
   h3 {
     margin: 0 0 8px;
     font-size: 24px;
     line-height: 32px;
   }
+
   .line-title {
     width: 330px;
   }
 
-  /* -------- Landing page ------- */
   .game-section {
     padding: 50px 30px 40px;
   }
+
   .game-section .item {
     margin: 0 12px 60px;
     width: 240px;
     height: 330px;
   }
+
   .game-section .item.active {
     width: 360px;
   }
+
   .game-section .item-desc {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
@@ -341,23 +383,19 @@ button {
     width: 250px;
   }
 
-  /* -------- Landing page ------- */
   .game-section {
     padding: 30px 15px 20px;
   }
+
   .game-section .item {
     margin: 0 10px 40px;
     width: 200px;
     height: 280px;
   }
+
   .game-section .item.active {
     width: 270px;
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
-  }
-  .game-section .item-desc {
-    padding: 0 14px 5px;
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
   }
 }
