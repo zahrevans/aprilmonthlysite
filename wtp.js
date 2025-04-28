@@ -86,3 +86,44 @@ function startGame(level) {
     input.focus();
     updateDifficultyDisplay(level);
 }
+function guessLetter() {
+    const input = document.getElementById('letterInput');
+    const guess = input.value.trim().toLowerCase();
+    input.value = '';
+
+    if (!guess) {
+        alert('Please enter a Pokémon name!');
+        return;
+    }
+    if (guessedWords.includes(guess)) {
+        alert(`You already tried "${guess}"!`);
+        return;
+    }
+    guessedWords.push(guess);
+
+    if (guess === selectedWord) {
+        handleWin();
+    } else {
+        handleMiss(guess);
+    }
+}
+
+// === wrong guess logic ===
+function handleMiss(guess) {
+    new Audio('Wrong.mp3').play();
+    wrongGuesses++;
+    document.getElementById('wrongLetters').textContent += ` ${guess}`;
+
+    const remaining = maxMistakes - wrongGuesses;
+    document.getElementById('livesImage').src = `img/${remaining + 1}-gold-coins.jpeg`;
+
+    if (wrongGuesses >= maxMistakes) {
+        endGame(false);
+    }
+}
+
+// === correct guess logic ===
+function handleWin() {
+    new Audio('Correct.mp3').play();
+    endGame(true);
+}
