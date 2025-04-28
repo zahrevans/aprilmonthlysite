@@ -1,20 +1,20 @@
 // easy: Tinkaton, scyther, Gimmora, skarmory, Heatran
 //hard: Absol, Infernape, froslass, Hatterene, Zeraora
 
-// List of words for the game
-const wordList = [
-    'gold',
-    'luck',
-    'clover',
-    'rain',
-    'charm',
-    'parade',
-    'leprechaun',
-    'treasure',
-    'celebration',
-    'greenery',
-    'shenanigans',
-    'tradition'
+// List of images for the game
+const easyImageList = [
+    'images/heatran.png',
+    'images/skarmory.png',
+    'images/tinkaton.png',
+    'images/scyther.png',
+    'images/glimmora.png',
+]
+const hardImageList = [
+    'images/absol.png',
+    'images/zeraora.png',
+    'images/froslass.png',
+    'images/infernape.png',
+    'images/hatterene.png',
 ]
 
 // Set up the basic stuff we need
