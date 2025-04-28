@@ -69,19 +69,23 @@ main {
   list-style: none;
   margin-top: 10px;
 }
-.features {
+.media {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
   text-align: center;
 }
-.features div {
+.media div {
   flex: 1;
 }
-.features img {
+.media img {
   width: 50px;
   margin-bottom: 10px;
 }
+.media a {
+  text-decoration: none;
+}
+
 .did-you-know {
   background: #fffae6;
   border-left: 6px solid #f7c600;
