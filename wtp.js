@@ -17,7 +17,7 @@ const hardImageList = [
     'images/hatterene.png',
 ]
 
-// Set up the basic stuff we need
+// Set up the basic stuff i need
 let selectedWord = '';    // the Pokémon name (lowercase)
 let selectedImage = '';    // the full path to its image
 let wrongGuesses = 0;
@@ -167,3 +167,8 @@ function restartGame() {
     document.getElementById('difficultyBox').classList.add('d-none');
     document.getElementById('gameArea').classList.add('d-none');
 }
+
+document.getElementById('letterInput')
+    .addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') guessLetter();
+    });
