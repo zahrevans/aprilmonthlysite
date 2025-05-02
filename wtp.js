@@ -22,9 +22,10 @@ let selectedWord = '';    // the Pokémon name (lowercase)
 let selectedImage = '';    // the full path to its image
 let wrongGuesses = 0;
 let guessedWords = [];    // to prevent repeat guesses
-const maxMistakes = 6;
+const maxMistakes = 3;    // Changed from 6 to 3
 let wins = 0;
 let losses = 0;
+let livesImages = ['pikalife.png', 'pikalife.png', 'pikalife.png']; // Array of life images
 
 // === update the score badges ===
 function updateScoreDisplay() {
@@ -50,7 +51,8 @@ function startGame(level) {
     // reset state
     wrongGuesses = 0;
     guessedWords = [];
-    document.getElementById('livesImage').src = 'img/6-gold-coins.jpeg';
+    livesImages = ['pikalife.png', 'pikalife.png', 'pikalife.png']; // Reset lives
+    updateLivesDisplay(); // Show all 3 lives at start
     document.getElementById('wrongLetters').textContent = 'Wrong Guesses:';
 
     // prep input for full name guess
@@ -86,6 +88,32 @@ function startGame(level) {
     input.focus();
     updateDifficultyDisplay(level);
 }
+
+function updateLivesDisplay() {
+    const livesContainer = document.createElement('div');
+    livesContainer.id = 'livesContainer';
+    livesContainer.className = 'd-flex justify-content-center my-3';
+    
+    const oldContainer = document.getElementById('livesContainer');
+    if (oldContainer) {
+        oldContainer.remove();
+    }
+    
+    livesImages.forEach((image, index) => {
+        if (image) { 
+            const lifeImg = document.createElement('img');
+            lifeImg.src = image;
+            lifeImg.className = 'mx-1';
+            lifeImg.style.width = '50px';
+            lifeImg.alt = `Life ${index + 1}`;
+            livesContainer.appendChild(lifeImg);
+        }
+    });
+    
+    const wrongLetters = document.getElementById('wrongLetters');
+    wrongLetters.after(livesContainer);
+}
+
 function guessLetter() {
     const input = document.getElementById('letterInput');
     const guess = input.value.trim().toLowerCase();
@@ -113,9 +141,10 @@ function handleMiss(guess) {
     new Audio('Wrong.mp3').play();
     wrongGuesses++;
     document.getElementById('wrongLetters').textContent += ` ${guess}`;
-
-    const remaining = maxMistakes - wrongGuesses;
-    document.getElementById('livesImage').src = `img/${remaining + 1}-gold-coins.jpeg`;
+    
+    // Remove one life
+    livesImages[livesImages.length - wrongGuesses] = null;
+    updateLivesDisplay();
 
     if (wrongGuesses >= maxMistakes) {
         endGame(false);
@@ -127,6 +156,7 @@ function handleWin() {
     new Audio('Correct.mp3').play();
     endGame(true);
 }
+
 function endGame(won) {
     if (won) {
         wins++;
@@ -154,14 +184,20 @@ function showMessage(text, type) {
 
 
 function restartGame() {
-
     document.querySelectorAll('#gameArea .alert')
         .forEach(alert => alert.remove());
 
-
     document.getElementById('wordDisplay').textContent = '';
     document.getElementById('wrongLetters').textContent = 'Wrong Guesses:';
-    document.getElementById('livesImage').src = 'img/6-gold-coins.jpeg';
+    
+    // Reset lives
+    livesImages = ['pikalife.png', 'pikalife.png', 'pikalife.png'];
+    
+    // Remove lives container
+    const livesContainer = document.getElementById('livesContainer');
+    if (livesContainer) {
+        livesContainer.remove();
+    }
 
     document.getElementById('difficultySelection').classList.remove('d-none');
     document.getElementById('difficultyBox').classList.add('d-none');
