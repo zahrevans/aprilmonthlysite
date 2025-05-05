@@ -1,5 +1,5 @@
 // easy: Tinkaton, scyther, Gimmora, skarmory, Heatran, hootoot, Flygon, Rookidee, skorupi, snorunt
-//hard: Absol, Infernape, froslass, Hatterene, Zeraora
+//hard: Absol, Infernape, froslass, Hatterene, Zeraora swablu wigglytuff
 
 // List of images for the game
 const easyImageList = [
@@ -21,11 +21,11 @@ const hardImageList = [
     'images/froslass.png',
     'images/infernape.png',
     'images/hatterene.png',
-    'images/.png',
-    'images/zeraora.png',
-    'images/froslass.png',
-    'images/infernape.png',
-    'images/hatterene.png',
+    'images/swablu.png',
+    'images/wigglytuff.png',
+    'images/magmar.png',
+    'images/capsakid.png',
+    'images/Braviary.png',
 ]
 
 // Set up the basic stuff i need
