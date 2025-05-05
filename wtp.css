@@ -1,8 +1,9 @@
 body {
 
-  font-family: "Roboto", "Arial", sans-serif;
+
   padding: 20px;
   min-height: 100vh;
+  background: 	#7f7f7f;
 }
 main {
   margin-top: 5%;

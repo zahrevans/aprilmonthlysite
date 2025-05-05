@@ -4,6 +4,9 @@ main {
 body h1 {
   text-align: center;
 }
+body {
+  background: 	#7f7f7f;
+}
 #scroll {
   position: fixed;
   right: 10px;
