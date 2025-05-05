@@ -93,14 +93,14 @@ function updateLivesDisplay() {
     const livesContainer = document.createElement('div');
     livesContainer.id = 'livesContainer';
     livesContainer.className = 'd-flex justify-content-center my-3';
-    
+
     const oldContainer = document.getElementById('livesContainer');
     if (oldContainer) {
         oldContainer.remove();
     }
-    
+
     livesImages.forEach((image, index) => {
-        if (image) { 
+        if (image) {
             const lifeImg = document.createElement('img');
             lifeImg.src = image;
             lifeImg.className = 'mx-1';
@@ -109,7 +109,7 @@ function updateLivesDisplay() {
             livesContainer.appendChild(lifeImg);
         }
     });
-    
+
     const wrongLetters = document.getElementById('wrongLetters');
     wrongLetters.after(livesContainer);
 }
@@ -141,7 +141,7 @@ function handleMiss(guess) {
     new Audio('Wrong.mp3').play();
     wrongGuesses++;
     document.getElementById('wrongLetters').textContent += ` ${guess}`;
-    
+
     // Remove one life
     livesImages[livesImages.length - wrongGuesses] = null;
     updateLivesDisplay();
@@ -189,10 +189,10 @@ function restartGame() {
 
     document.getElementById('wordDisplay').textContent = '';
     document.getElementById('wrongLetters').textContent = 'Wrong Guesses:';
-    
+
     // Reset lives
     livesImages = ['pikalife.png', 'pikalife.png', 'pikalife.png'];
-    
+
     // Remove lives container
     const livesContainer = document.getElementById('livesContainer');
     if (livesContainer) {

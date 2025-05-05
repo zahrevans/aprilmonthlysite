@@ -1,5 +1,9 @@
-
-
+main {
+  margin-top: 5%;
+}
+body h1 {
+  text-align: center;
+}
 #scroll {
   position: fixed;
   right: 10px;
@@ -54,4 +58,27 @@
   margin: 10px !important;
   display: flex;
   flex-direction: column;
+}
+/* NAv bar css */
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  background-color: #adadad;
+}
+.offcanvas-body {
+  flex-grow: 1;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  overflow-y: auto;
+  background-color: #adadad;
+}
+
+.nav-item {
+  text-decoration: underline;
+  color: black;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
 }
