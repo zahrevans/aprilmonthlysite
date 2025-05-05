@@ -1,4 +1,4 @@
-// easy: Tinkaton, scyther, Gimmora, skarmory, Heatran
+// easy: Tinkaton, scyther, Gimmora, skarmory, Heatran, Braviary, Flygon, Rookidee, skorupi, snorunt
 //hard: Absol, Infernape, froslass, Hatterene, Zeraora
 
 // List of images for the game
@@ -8,7 +8,13 @@ const easyImageList = [
     'images/tinkaton.png',
     'images/scyther.png',
     'images/glimmora.png',
+    'images/braviary.png',
+    'images/skorupi.png',
+    'images/rookidee.png',
+    'images/snorunt.png',
+    'images/flygon.png',
 ]
+console.log(easyImageList)
 const hardImageList = [
     'images/absol.png',
     'images/zeraora.png',
