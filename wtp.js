@@ -1,7 +1,8 @@
 // easy: Tinkaton, scyther, Gimmora, skarmory, Heatran, hootoot, Flygon, Rookidee, skorupi, snorunt
-//hard: Absol, Infernape, froslass, Hatterene, Zeraora swablu wigglytuff
+//hard: Absol, Infernape, froslass, Hatterene, Zeraora swablu wigglytuff magmar capsakid
 
 // List of images for the game
+// double checked easy 
 const easyImageList = [
     'images/heatran.png',
     'images/skarmory.png',
