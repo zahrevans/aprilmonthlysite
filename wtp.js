@@ -14,7 +14,8 @@ const easyImageList = [
     'images/snorunt.png',
     'images/flygon.png',
 ]
-console.log(easyImageList)
+// Double checked capitallizations
+
 const hardImageList = [
     'images/absol.png',
     'images/zeraora.png',
