@@ -25,7 +25,7 @@ const hardImageList = [
     'images/wigglytuff.png',
     'images/magmar.png',
     'images/capsakid.png',
-    'images/Braviary.png',
+    'images/braviary.png',
 ]
 
 // Set up the basic stuff i need
